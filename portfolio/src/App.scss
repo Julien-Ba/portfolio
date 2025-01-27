@@ -1,0 +1,13 @@
+@use './style/reset';
+@use './style/breakpoints';
+
+:root {
+    font-family: system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+#root {
+    width: 100%;
+    max-width: breakpoints.$max;
+    min-width: breakpoints.$min;
+    min-height: 100vh;
+}
