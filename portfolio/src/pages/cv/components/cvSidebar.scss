@@ -1,0 +1,70 @@
+.cv-sidebar {
+    min-width: 15.25rem;
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1.5rem;
+    border: 1px rgba($color: #000000, $alpha: 0.15) solid;
+    border-radius: 10px;
+    background-color: rgba($color: #c3dff7, $alpha: 0.2);
+
+    &__section {
+    }
+
+    &__title {
+        margin-block-end: 0.5rem;
+        font-size: clamp(1.125rem, 0.9821rem + 0.2976vw, 1.25rem);
+        font-weight: 500;
+        color: #27669d;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        &:is(a) {
+            display: block;
+        }
+    }
+
+    &__text {
+        font-size: clamp(0.8125rem, 0.6696rem + 0.2976vw, 0.9375rem);
+    }
+
+    &__description {
+        position: relative;
+        top: -0.25rem;
+        font-size: clamp(0.75rem, 0.6071rem + 0.2976vw, 0.875rem);
+    }
+
+    &__contact {
+    }
+
+    :is(.icon, li > .bullet-point) {
+        margin-inline-end: 0.5rem;
+    }
+
+    &__picture {
+        width: 12rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        justify-self: center;
+        filter: drop-shadow(0 0 5px rgba($color: #000, $alpha: 0.3))
+            drop-shadow(4px 8px 5px rgba($color: #000, $alpha: 0.3));
+    }
+}
+
+@media screen and (max-width: 62.5rem) {
+    .cv-sidebar {
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 3rem;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 32.5rem) {
+    .cv-sidebar {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

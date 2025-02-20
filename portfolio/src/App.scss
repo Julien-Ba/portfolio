@@ -1,8 +1,12 @@
-@use './style/reset';
-@use './style/breakpoints';
+@use '@/style/reset';
+@use '@/style/breakpoints';
+@use '@/style/colors';
 
 :root {
-    font-family: system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    background-color: colors.$bg-light;
+    font-family: Roboto, system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+        sans-serif;
+    color: colors.$text-dark;
 }
 
 #root {
@@ -10,4 +14,7 @@
     max-width: breakpoints.$max;
     min-width: breakpoints.$min;
     min-height: 100vh;
+    margin: auto;
+    padding-block: min(2rem, 3vh);
+    padding-inline: min(1rem, 1.5%);
 }

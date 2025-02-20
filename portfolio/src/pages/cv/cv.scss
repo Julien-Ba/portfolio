@@ -1,0 +1,28 @@
+.cv {
+    width: fit-content;
+    margin: auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 4rem;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+
+    &__hero {
+        grid-column: -1/1;
+    }
+}
+
+@media screen and (max-width: 62.5rem) {
+    .cv {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .cv {
+        height: 100vh;
+        border-radius: 0;
+    }
+}
