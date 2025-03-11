@@ -1,5 +1,5 @@
 import './cvMain.scss';
-import { Link } from 'react-router-dom';
+import Link from '@/components/link/Link';
 import Bullet from '@/components/bullet/Bullet';
 import openclassrooms from '@/assets/icons/openclassrooms.png';
 import sacreCoeur from '@/assets/icons/sacre-coeur-full.png';

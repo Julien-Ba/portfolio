@@ -1,0 +1,8 @@
+@use '@/style/colors';
+
+.link {
+    transition: text-decoration 300ms ease-in-out;
+    &:hover {
+        text-decoration: underline greenyellow;
+    }
+}
