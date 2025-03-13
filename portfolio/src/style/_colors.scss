@@ -1,3 +1,12 @@
-$bg-light: #f8fafc;
+:root {
+    --bg-primary: #f8fafc;
+    --text-primary: #32363a;
+}
 
-$text-dark: #32363a;
+:root[data-theme='dark'] {
+    --bg-primary: #0d1b2a;
+    --text-primary: #f0f0f0;
+}
+
+$bg-primary: var(--bg-primary);
+$text-primary: var(--text-primary);

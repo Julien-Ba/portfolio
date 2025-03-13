@@ -3,10 +3,10 @@
 @use '@/style/colors';
 
 :root {
-    background-color: colors.$bg-light;
+    background-color: colors.$bg-primary;
     font-family: Roboto, system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
         sans-serif;
-    color: colors.$text-dark;
+    color: colors.$text-primary;
 }
 
 #root {
