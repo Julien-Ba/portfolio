@@ -1,15 +1,16 @@
 import './link.scss';
-import PropTypes from 'prop-types';
+import { PropsWithChildren } from 'react';
 import { Link as LinkReact } from 'react-router-dom';
 
-export default function Link({ children, ...props }) {
+interface Props extends PropsWithChildren {
+    to: string;
+    target?: string;
+}
+
+export default function Link({ to, target, children, ...props }: Props) {
     return (
-        <LinkReact className='link' {...props}>
+        <LinkReact to={to} target={target} className='link' {...props}>
             {children}
         </LinkReact>
     );
 }
-
-Link.propTypes = {
-    children: PropTypes.node,
-};

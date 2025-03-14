@@ -1,7 +1,10 @@
 import './bullet.scss';
-import PropTypes from 'prop-types';
 
-export default function Bullet({ size = '' }) {
+interface Props {
+    size?: string;
+}
+
+export default function Bullet({ size = '' }: Props) {
     const style = {};
 
     /**
@@ -28,7 +31,3 @@ export default function Bullet({ size = '' }) {
         </span>
     );
 }
-
-Bullet.propTypes = {
-    size: PropTypes.string,
-};
