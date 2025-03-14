@@ -8,6 +8,7 @@ export { default as PhoneIcon } from './PhoneIcon';
 export { default as PinIcon } from './PinIcon';
 export { default as ReactIcon } from './ReactIcon';
 export { default as ReduxIcon } from './ReduxIcon';
+export { default as ResumeIcon } from './ResumeIcon';
 export { default as SassIcon } from './SassIcon';
-export { default as ViteIcon } from './ViteIcon';
 export { default as SwaggerIcon } from './SwaggerIcon';
+export { default as ViteIcon } from './ViteIcon';
