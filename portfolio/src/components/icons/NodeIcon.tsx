@@ -1,4 +1,9 @@
-import PropTypes from 'prop-types';
+interface Props {
+    className?: string;
+    width?: number;
+    height?: number;
+    color?: string;
+}
 
 export default function NodeIcon({
     className = 'icon icon-node',
@@ -6,7 +11,7 @@ export default function NodeIcon({
     height = 24,
     color = '#333',
     ...props
-}) {
+}: Props) {
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -84,10 +89,3 @@ export default function NodeIcon({
         </svg>
     );
 }
-
-NodeIcon.propTypes = {
-    className: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    color: PropTypes.string,
-};

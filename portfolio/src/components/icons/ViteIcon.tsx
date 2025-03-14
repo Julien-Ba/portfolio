@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types';
+interface Props {
+    className?: string;
+    width?: number;
+    height?: number;
+}
 
 export default function ViteIcon({
     className = 'icon icon-vite',
     width = 24,
     height = 24,
     ...props
-}) {
+}: Props) {
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -53,9 +57,3 @@ export default function ViteIcon({
         </svg>
     );
 }
-
-ViteIcon.propTypes = {
-    className: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-};

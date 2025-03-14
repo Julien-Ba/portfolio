@@ -1,4 +1,9 @@
-import PropTypes from 'prop-types';
+interface Props {
+    className?: string;
+    width?: number;
+    height?: number;
+    color?: string;
+}
 
 const bgPath =
     'M63.999 124.945c-33.607 0-60.95-27.34-60.95-60.949C3.05 30.388 30.392 3.048 64 3.048s60.95 27.342 60.95 60.95c0 33.607-27.343 60.946-60.95 60.946z';
@@ -11,7 +16,7 @@ export default function SwaggerIcon({
     height = 24,
     color = '#173647',
     ...props
-}) {
+}: Props) {
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -26,9 +31,3 @@ export default function SwaggerIcon({
         </svg>
     );
 }
-SwaggerIcon.propTypes = {
-    className: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    color: PropTypes.string,
-};

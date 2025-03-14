@@ -1,4 +1,9 @@
-import PropTypes from 'prop-types';
+interface Props {
+    className?: string;
+    width?: number;
+    height?: number;
+    color?: string;
+}
 
 const pinPath =
     'M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0';
@@ -9,7 +14,7 @@ export default function PinIcon({
     height = 24,
     color = 'currentColor',
     ...props
-}) {
+}: Props) {
     return (
         <svg
             className={className}
@@ -32,10 +37,3 @@ export default function PinIcon({
         </svg>
     );
 }
-
-PinIcon.propTypes = {
-    className: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    color: PropTypes.string,
-};

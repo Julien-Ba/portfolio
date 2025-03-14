@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types';
+interface Props {
+    className?: string;
+    width?: number;
+    height?: number;
+}
 
 export default function MongoIcon({
     className = 'icon icon-mongo',
     width = 24,
     height = 24,
     ...props
-}) {
+}: Props) {
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -77,10 +81,3 @@ export default function MongoIcon({
         </svg>
     );
 }
-
-MongoIcon.propTypes = {
-    className: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    color: PropTypes.string,
-};
