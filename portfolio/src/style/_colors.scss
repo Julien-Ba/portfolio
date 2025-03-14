@@ -1,12 +1,31 @@
 :root {
-    --bg-primary: #f8fafc;
-    --text-primary: #32363a;
-}
+    --bg-primary-rgb: 248, 250, 252;
+    --bg-secondary-rgb: 195, 223, 247;
+    --bg-card-rgb: 240, 240, 240;
+    --text-primary-rgb: 50, 54, 58;
+    --text-secondary-rgb: 39, 102, 157;
 
-:root[data-theme='dark'] {
-    --bg-primary: #0d1b2a;
-    --text-primary: #f0f0f0;
+    --bg-primary: rgb(var(--bg-primary-rgb));
+    --bg-secondary: rgb(var(--bg-secondary-rgb));
+    --bg-card: rgb(var(--bg-card-rgb));
+    --text-primary: rgb(var(--text-primary-rgb));
+    --text-secondary: rgb(var(--text-secondary-rgb));
+
+    &[data-theme='dark'] {
+        --bg-primary-rgb: 13, 27, 42;
+        --bg-secondary-rgb: 173, 202, 228;
+        --bg-card-rgb: 27, 38, 59;
+        --text-primary-rgb: 240, 240, 240;
+        --text-secondary-rgb: 199, 217, 240;
+    }
 }
 
 $bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$bg-card: var(--bg-card);
 $text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+
+@function with-opacity($color-name, $opacity) {
+    @return rgba(var(--#{$color-name}-rgb), $opacity);
+}
