@@ -1,4 +1,6 @@
-interface Props {
+import { SVGProps } from 'react';
+
+interface Props extends SVGProps<SVGSVGElement> {
     className?: string;
     width?: number;
     height?: number;
