@@ -1,10 +1,13 @@
 import './header.scss';
 import { useThemeStore } from '@/store/themeStore';
+import { ThemeIcon } from '@/components/icons';
 
 export default function Header() {
-    const { theme, toggleTheme } = useThemeStore();
+    const { toggleTheme } = useThemeStore();
 
     return (
-        <button onClick={toggleTheme}>Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode</button>
+        <button onClick={toggleTheme}>
+            <ThemeIcon />
+        </button>
     );
 }

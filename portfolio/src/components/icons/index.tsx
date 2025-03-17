@@ -11,4 +11,5 @@ export { default as ReduxIcon } from './ReduxIcon';
 export { default as ResumeIcon } from './ResumeIcon';
 export { default as SassIcon } from './SassIcon';
 export { default as SwaggerIcon } from './SwaggerIcon';
+export { default as ThemeIcon } from './ThemeIcon';
 export { default as ViteIcon } from './ViteIcon';
