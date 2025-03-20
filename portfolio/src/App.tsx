@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom';
 import { router } from '@/router/router';
 import { useThemeStore } from '@/store/themeStore';
 import { ThemeState } from '@/types/theme';
+import { LanguageProvider } from './contexts/LanguageProvider';
 
 export default function App() {
     const theme = useThemeStore((state: ThemeState) => state.theme);
@@ -12,5 +13,9 @@ export default function App() {
         document.documentElement.setAttribute('data-theme', theme);
     }, [theme]);
 
-    return <RouterProvider router={router} />;
+    return (
+        <LanguageProvider>
+            <RouterProvider router={router} />
+        </LanguageProvider>
+    );
 }
