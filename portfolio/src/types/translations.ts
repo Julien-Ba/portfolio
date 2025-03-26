@@ -1,5 +1,7 @@
 import { fr } from '@/translations/fr';
 
+export const LanguagesSchema = ['en', 'fr'];
+
 export type Languages = 'en' | 'fr';
 
 type Translations = typeof fr;
