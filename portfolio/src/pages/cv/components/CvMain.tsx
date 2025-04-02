@@ -175,7 +175,7 @@ export default function CvMain() {
                         <h3 className='cv-main__subtitle'>Autres expériences</h3>
                         <ol className='cv-main__sublist'>
                             <li className='cv-main__subitem'>
-                                Maitrise avancée en ZenScript depuis 2017 (langage similaire à
+                                Maitrise avancée en ZenScript depuis 2015 (langage similaire à
                                 JavaScript créé pour se hook sur du Java)
                             </li>
                             <li className='cv-main__subitem'>
