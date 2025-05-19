@@ -1,10 +1,10 @@
 import './bullet.scss';
 
 interface Props {
-    size?: 'big' | 'small' | 'regular';
+    size?: 'big' | 'small' | (string & {});
 }
 
-export default function Bullet({ size = 'regular' }: Props) {
+export default function Bullet({ size = '' }: Props) {
     const style = {};
 
     /**
