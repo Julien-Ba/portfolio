@@ -12,7 +12,7 @@ export const fr = {
             main: {
                 presentation: {
                     title: 'Développeur Web',
-                    text: 'Développeur web junior spécialisé en React/JavaScript, combinant une formation technique récente avec des compétences éprouvées en gestion d&apos;équipe et organisation. Motivé par l&apos;apprentissage continu et la résolution de problèmes.',
+                    text: "Développeur web junior spécialisé en React/JavaScript, combinant une formation technique récente avec des compétences éprouvées en gestion d'équipe et organisation. Motivé par l'apprentissage continu et la résolution de problèmes.",
                 },
                 education: {
                     title: 'Formation',
@@ -30,19 +30,19 @@ export const fr = {
                 experience: {
                     title: 'Expérience',
                     react: {
-                        title: 'Développeur d&apos;application JavaScript React',
-                        p14: 'Déploiement d&apos;un projet full stack',
+                        title: "Développeur d'application JavaScript React",
+                        p14: "Déploiement d'un projet full stack",
                         table: 'Publication de composant React',
                         fmt: 'de package utilitaire',
-                        redux: 'Gestion d&apos;un store Redux',
-                        swagger: 'Création d&apos;une documentation API avec Swagger',
+                        redux: "Gestion d'un store Redux",
+                        swagger: "Création d'une documentation API avec Swagger",
                         d3: 'Réalisation de graphiques avec D3/Recharts',
-                        p10: 'Définition de besoins avec methode Agile: diagrammes Mermaid de cas d&apos;usage, User stories, maquettes Figma, Kanban.',
+                        p10: "Définition de besoins avec methode Agile: diagrammes Mermaid de cas d'usage, User stories, maquettes Figma, Kanban.",
                         jest: 'Création de test avec Jest',
-                        p7: 'Développement d&apos;un algorithme de recherche',
+                        p7: "Développement d'un algorithme de recherche",
                         p6: 'Implémentation de design patterns en JavaScript',
                         sass: 'Exploitation approfondie des fonctionnalités Sass',
-                        html: 'Intégration HTML: respect des standards sémantiques, conformité aux normes d&apos;accessibilité, optimisation pour le référencement naturel',
+                        html: "Intégration HTML: respect des standards sémantiques, conformité aux normes d'accessibilité, optimisation pour le référencement naturel",
                     },
                     misc: {
                         title: 'Autres expériences',
@@ -51,13 +51,13 @@ export const fr = {
                         excel: 'Excel scripting pour faciliter le quotidien en entreprise',
                         website:
                             'Conception de site web pour communautés avec chat, forum, base de donnée MySQL',
-                        gimp: 'Création de contenu graphique web avec GIMP - spécialisé dans la conception d&apos;éléments visuels personnalisés',
+                        gimp: "Création de contenu graphique web avec GIMP - spécialisé dans la conception d'éléments visuels personnalisés",
                     },
                 },
                 career: {
                     title: 'Parcours professionnel',
                     description:
-                        'Mon parcours dans le secteur de la restauration m&apos;a permis de développer des skills importants, notamment à travers des postes clés tels que :',
+                        "Mon parcours dans le secteur de la restauration m'a permis de développer des skills importants, notamment à travers des postes clés tels que :",
                     artic: {
                         title: 'Responsable de Cuisine, association Artic42 (St Etienne, France) 2020/21',
                         description:
@@ -66,7 +66,7 @@ export const fr = {
                     novotel: {
                         title: 'Second de cuisine, Novotel Atria (Annecy, France) 2017',
                         description:
-                            'La gestion événementielle et le management d&apos;équipe, développant mes compétences en coordination et en leadership',
+                            "La gestion événementielle et le management d'équipe, développant mes compétences en coordination et en leadership",
                     },
                     pharamond: {
                         title: 'Second de cuisine, restaurant Le Pharamond (Paris 1er, France) 2016',
