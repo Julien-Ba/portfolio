@@ -13,17 +13,20 @@ import {
     SwaggerIcon,
 } from '@/components/icons';
 import julien from '@/assets/images/julien.jpeg';
+import useTranslation from '@/hooks/useTranslation';
 
 const ICON_SIZE = 16;
 const LOGO_SIZE = 24;
 
 export default function CvSidebar() {
+    const { t } = useTranslation();
+
     return (
         <aside className='cv-sidebar' aria-label='Profile Details'>
             <img className='cv-sidebar__picture' src={julien} alt='profile picture' />
             {/* Contact Information */}
             <section className='cv-sidebar__section'>
-                <h2 className='cv-sidebar__title'>Coordonées</h2>
+                <h2 className='cv-sidebar__title'>{t('pages.cv.sidebar.contact')}</h2>
                 <address className='cv-sidebar__contact'>
                     <div className='cv-sidebar__item'>
                         <PinIcon width={ICON_SIZE} height={ICON_SIZE} />
@@ -43,7 +46,7 @@ export default function CvSidebar() {
             </section>
             {/* Hard Skills */}
             <section className='cv-sidebar__section'>
-                <h2 className='cv-sidebar__title'>Compétences</h2>
+                <h2 className='cv-sidebar__title'>{t('pages.cv.sidebar.skill')}</h2>
                 <ul className='cv-sidebar__list'>
                     <li className='cv-sidebar__item'>
                         <ReactIcon width={LOGO_SIZE} height={LOGO_SIZE} />
@@ -77,51 +80,73 @@ export default function CvSidebar() {
             </section>
             {/* Soft Skills */}
             <section className='cv-sidebar__section'>
-                <h2 className='cv-sidebar__title'>Qualités personnelles</h2>
+                <h2 className='cv-sidebar__title'>{t('pages.cv.sidebar.softskill.title')}</h2>
                 <ul className='cv-sidebar__list'>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Adaptabilité</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.softskill.a')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Organisation</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.softskill.b')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Autonomie</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.softskill.c')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Curiosité</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.softskill.d')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Management</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.softskill.e')}
+                        </span>
                     </li>
                 </ul>
             </section>
             {/* Languages */}
             <section className='cv-sidebar__section'>
-                <h2 className='cv-sidebar__title'>Langues</h2>
+                <h2 className='cv-sidebar__title'>{t('pages.cv.sidebar.languages.title')}</h2>
                 <ul className='cv-sidebar__list'>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Français</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.languages.french.title')}
+                        </span>
                         <br />
-                        <span className='cv-sidebar__description'>Langue maternelle</span>
+                        <span className='cv-sidebar__description'>
+                            {t('pages.cv.sidebar.languages.french.level')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Anglais</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.languages.english.title')}
+                        </span>
                         <br />
-                        <span className='cv-sidebar__description'>C1 - Avancé</span>
+                        <span className='cv-sidebar__description'>
+                            {t('pages.cv.sidebar.languages.english.level')}
+                        </span>
                     </li>
                     <li className='cv-sidebar__item'>
                         <Bullet />
-                        <span className='cv-sidebar__text'>Espagnol</span>
+                        <span className='cv-sidebar__text'>
+                            {t('pages.cv.sidebar.languages.spanish.title')}
+                        </span>
                         <br />
-                        <span className='cv-sidebar__description'>A1 - Élémentaire</span>
+                        <span className='cv-sidebar__description'>
+                            {t('pages.cv.sidebar.languages.spanish.level')}
+                        </span>
                     </li>
                 </ul>
             </section>

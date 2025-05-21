@@ -3,22 +3,20 @@ import Link from '@/components/link/Link';
 import Bullet from '@/components/bullet/Bullet';
 import openclassrooms from '@/assets/icons/openclassrooms.png';
 import sacreCoeur from '@/assets/icons/sacre-coeur-full.png';
+import useTranslation from '@/hooks/useTranslation';
 
 export default function CvMain() {
+    const { t } = useTranslation();
+
     return (
         <section className='cv-main__section' aria-label='Professional Experience'>
             <article className='cv-main__article cv-main__presentation'>
                 <h1 className='cv-main__name'>Julien Barbier</h1>
-                <h2 className='cv-main__title'>Développeur Web</h2>
-                <p className='cv-main__text'>
-                    Développeur web junior spécialisé en React/JavaScript, combinant une formation
-                    technique récente avec des compétences éprouvées en gestion d&apos;équipe et
-                    organisation. Motivé par l&apos;apprentissage continu et la résolution de
-                    problèmes.
-                </p>
+                <h2 className='cv-main__title'>{t('pages.cv.main.presentation.title')}</h2>
+                <p className='cv-main__text'>{t('pages.cv.main.presentation.text')}</p>
             </article>
             <article className='cv-main__article cv-main__education'>
-                <h2 className='cv-main__title'>Formation</h2>
+                <h2 className='cv-main__title'>{t('pages.cv.main.education.title')}</h2>
                 <ul className='cv-main__list'>
                     <li className='cv-main__item'>
                         <img
@@ -30,17 +28,25 @@ export default function CvMain() {
                             to='https://www.francecompetences.fr/recherche/rncp/38038/'
                             target='_blank'
                         >
-                            <span className='cv-main__text'>Développeur concepteur logiciel</span>
+                            <span className='cv-main__text'>
+                                {t('pages.cv.main.education.openclassrooms.title')}
+                            </span>
                             <Bullet size='small' />
-                            <span className='cv-main__text'>Niveau 6 (bac +3/4)</span>
+                            <span className='cv-main__text'>
+                                {t('pages.cv.main.education.openclassrooms.level')}
+                            </span>
                         </Link>
                         <Link
                             to='https://openclassrooms.com/fr/paths/877-developpeur-dapplication-javascript-react'
                             target='_blank'
                         >
-                            <span className='cv-main__description'>Formation Openclassrooms</span>
+                            <span className='cv-main__description'>
+                                {t('pages.cv.main.education.openclassrooms.organization')}
+                            </span>
                             <Bullet size='small' />
-                            <span className='cv-main__description'>Distanciel</span>
+                            <span className='cv-main__description'>
+                                {t('pages.cv.main.education.openclassrooms.location')}
+                            </span>
                             <Bullet size='small' />
                             <span className='cv-main__description'>2025</span>
                         </Link>
@@ -55,9 +61,13 @@ export default function CvMain() {
                             to='https://www.francecompetences.fr/recherche/rncp/1063/'
                             target='_blank'
                         >
-                            <span className='cv-main__text'>BTS - Hôtellerie restauration</span>
+                            <span className='cv-main__text'>
+                                {t('pages.cv.main.education.sacrecoeur.title')}
+                            </span>
                             <Bullet size='small' />
-                            <span className='cv-main__text'>Niveau 5 (bac +2)</span>
+                            <span className='cv-main__text'>
+                                {t('pages.cv.main.education.sacrecoeur.level')}
+                            </span>
                         </Link>
                         <Link
                             to='https://www.ensemble-sacre-coeur.fr/pages/pole-superieur.html'
@@ -75,16 +85,16 @@ export default function CvMain() {
                 </ul>
             </article>
             <article className='cv-main__article cv-main__experience'>
-                <h2 className='cv-main__title'>Expérience</h2>
+                <h2 className='cv-main__title'>{t('pages.cv.main.experience.title')}</h2>
                 <ul className='cv-main__list'>
                     <li className='cv-main__item'>
                         <h3 className='cv-main__subtitle'>
-                            Développeur d&apos;application JavaScript React
+                            {t('pages.cv.main.experience.react.title')}
                         </h3>
                         <ol className='cv-main__sublist'>
                             <li className='cv-main__subitem'>
                                 <Link to='https://github.com/Julien-Ba/project14' target='_blank'>
-                                    Déploiement d&apos;un projet full stack
+                                    {t('pages.cv.main.experience.react.p14')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -92,14 +102,14 @@ export default function CvMain() {
                                     to='https://www.npmjs.com/package/react-simple-table-component'
                                     target='_blank'
                                 >
-                                    Publication de composant React
+                                    {t('pages.cv.main.experience.react.table')}
                                 </Link>
                                 <span>, </span>
                                 <Link
                                     to='https://www.npmjs.com/package/str-case-converter'
                                     target='_blank'
                                 >
-                                    de package utilitaire
+                                    {t('pages.cv.main.experience.react.fmt')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -107,7 +117,7 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project13/tree/main/argent-bank/client/src/store'
                                     target='_blank'
                                 >
-                                    Gestion d&apos;un store Redux
+                                    {t('pages.cv.main.experience.react.redux')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -115,7 +125,7 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project13/blob/main/argent-bank/server/swagger.yaml'
                                     target='_blank'
                                 >
-                                    Création d&apos;une documentation API avec Swagger
+                                    {t('pages.cv.main.experience.react.swagger')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -123,13 +133,12 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project12/tree/main/my-sportsee-frontend'
                                     target='_blank'
                                 >
-                                    Réalisation de graphiques avec D3/Recharts
+                                    {t('pages.cv.main.experience.react.d3')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
                                 <Link to='https://github.com/Julien-Ba/project10' target='_blank'>
-                                    Définition de besoins avec methode Agile: diagrammes Mermaid de
-                                    cas d&apos;usage, User stories, maquettes Figma, Kanban.
+                                    {t('pages.cv.main.experience.react.p10')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -137,7 +146,7 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project9/tree/main'
                                     target='_blank'
                                 >
-                                    Création de test avec Jest
+                                    {t('pages.cv.main.experience.react.jest')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -145,7 +154,7 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project7/tree/main'
                                     target='_blank'
                                 >
-                                    Développement d&apos;un algorithme de recherche
+                                    {t('pages.cv.main.experience.react.p7')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -153,7 +162,7 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project6/tree/main'
                                     target='_blank'
                                 >
-                                    Implémentation de design patterns en JavaScript
+                                    {t('pages.cv.main.experience.react.p6')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
@@ -161,71 +170,55 @@ export default function CvMain() {
                                     to='https://github.com/Julien-Ba/project3/blob/main/'
                                     target='_blank'
                                 >
-                                    Exploitation approfondie des fonctionnalités Sass
+                                    {t('pages.cv.main.experience.react.sass')}
                                 </Link>
                             </li>
                             <li className='cv-main__subitem'>
-                                Intégration HTML: respect des standards sémantiques, conformité aux
-                                normes d&apos;accessibilité, optimisation pour le référencement
-                                naturel
+                                {t('pages.cv.main.experience.react.html')}
                             </li>
                         </ol>
                     </li>
                     <li className='cv-main__item'>
-                        <h3 className='cv-main__subtitle'>Autres expériences</h3>
+                        <h3 className='cv-main__subtitle'>
+                            {t('pages.cv.main.experience.misc.title')}
+                        </h3>
                         <ol className='cv-main__sublist'>
                             <li className='cv-main__subitem'>
-                                Maitrise avancée en ZenScript depuis 2015 (langage similaire à
-                                JavaScript créé pour se hook sur du Java)
+                                {t('pages.cv.main.experience.misc.zenscript')}
                             </li>
                             <li className='cv-main__subitem'>
-                                Excel scripting pour faciliter le quotidien en entreprise
+                                {t('pages.cv.main.experience.misc.excel')}
                             </li>
                             <li className='cv-main__subitem'>
-                                Conception de site web pour communautés avec chat, forum, base de
-                                donnée MySQL
+                                {t('pages.cv.main.experience.misc.website')}
                             </li>
                             <li className='cv-main__subitem'>
-                                Création de contenu graphique web avec GIMP - spécialisé dans la
-                                conception d&apos;éléments visuels personnalisés
+                                {t('pages.cv.main.experience.misc.gimp')}
                             </li>
                         </ol>
                     </li>
                 </ul>
             </article>
             <article className='cv-main__article cv-main__previous'>
-                <h2 className='cv-main__title'>Parcours professionnel</h2>
-                <p className='cv-main__description'>
-                    Mon parcours dans le secteur de la restauration m&apos;a permis de développer
-                    des skills importants, notamment à travers des postes clés tels que :
-                </p>
+                <h2 className='cv-main__title'>{t('pages.cv.main.career.title')}</h2>
+                <p className='cv-main__description'>{t('pages.cv.main.career.description')}</p>
                 <ol className='cv-main__sublist'>
                     <li>
-                        <p className='cv-main__text'>
-                            Responsable de Cuisine, association Artic42 (St Etienne, France) 2020/21
-                        </p>
+                        <p className='cv-main__text'>{t('pages.cv.main.career.artic.title')}</p>
                         <p className='cv-main__description'>
-                            Un poste à responsabilités axé sur la gestion des priorités et la prise
-                            de décision stratégique, incluant la supervision opérationnelle pendant
-                            la prériode COVID
+                            {t('pages.cv.main.career.artic.description')}
                         </p>
                     </li>
                     <li>
-                        <p className='cv-main__text'>
-                            Second de cuisine, Novotel Atria (Annecy, France) 2017
-                        </p>
+                        <p className='cv-main__text'>{t('pages.cv.main.career.novotel.title')}</p>
                         <p className='cv-main__description'>
-                            La gestion événementielle et le management d&apos;équipe, développant
-                            mes compétences en coordination et en leadership
+                            {t('pages.cv.main.career.novotel.description')}
                         </p>
                     </li>
                     <li>
-                        <p className='cv-main__text'>
-                            Second de cuisine, restaurant Le Pharamond (Paris 1er, France) 2016
-                        </p>
+                        <p className='cv-main__text'>{t('pages.cv.main.career.pharamond.title')}</p>
                         <p className='cv-main__description'>
-                            Une environnement exigeant qui a forgé ma rigueur professionnelle et mon
-                            perfectionnisme, alliant créativité et sens aigu de la précision
+                            {t('pages.cv.main.career.pharamond.description')}
                         </p>
                     </li>
                 </ol>
