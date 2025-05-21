@@ -67,10 +67,14 @@ function getAlternateTranslation(key: TranslationKey, lang: Languages): string {
 }
 
 export function LanguageProvider({ children }: PropsWithChildren) {
-    const [language, setLanguage] = useState<Languages>(getDefaultLanguage());
+    const [language, setLanguageState] = useState<Languages>(getDefaultLanguage());
 
-    function changeLanguage(lang: Languages) {
-        setLanguage(lang);
+    function getLanguages(): Record<Languages, string> {
+        return { en: 'English', fr: 'Français' };
+    }
+
+    function setLanguage(lang: Languages): void {
+        setLanguageState(lang);
         localStorage.setItem('language', lang);
     }
 
@@ -81,7 +85,7 @@ export function LanguageProvider({ children }: PropsWithChildren) {
     }
 
     return (
-        <LanguageContext.Provider value={{ language, changeLanguage, t }}>
+        <LanguageContext.Provider value={{ language, getLanguages, setLanguage, t }}>
             {children}
         </LanguageContext.Provider>
     );

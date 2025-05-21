@@ -3,7 +3,8 @@ import { Languages, TranslationKey } from '@/types/translations';
 
 export interface LanguageContextType {
     language: Languages;
-    changeLanguage: (lang: Languages) => void;
+    getLanguages: () => Record<Languages, string>;
+    setLanguage: (lang: Languages) => void;
     t: (key: TranslationKey) => string;
 }
 
