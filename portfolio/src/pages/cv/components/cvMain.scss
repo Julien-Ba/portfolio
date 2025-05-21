@@ -1,4 +1,5 @@
 @use '@/style/colors';
+@use '@/style/mixins' as *;
 
 .cv-main {
     &__section {
@@ -29,10 +30,6 @@
     }
 
     &__icon {
-        @mixin size($size) {
-            width: $size;
-            height: $size;
-        }
         @include size(clamp(1.625rem, 1.4821rem + 0.2976vw, 1.75rem));
     }
 
@@ -49,7 +46,7 @@
     }
 
     &__subitem {
-        max-width: 60ch;
+        max-width: 66ch;
         font-size: clamp(0.75rem, 0.6071rem + 0.2976vw, 0.875rem);
     }
 
