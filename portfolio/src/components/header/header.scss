@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    &-setting {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .button-print {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        justify-self: left;
+    }
+}

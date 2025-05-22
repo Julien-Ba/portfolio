@@ -1,9 +1,9 @@
-import './cvMain.scss';
-import Link from '@/components/link/Link';
-import Bullet from '@/components/bullet/Bullet';
 import openclassrooms from '@/assets/icons/openclassrooms.png';
 import sacreCoeur from '@/assets/icons/sacre-coeur-full.png';
+import Bullet from '@/components/bullet/Bullet';
+import Link from '@/components/link/Link';
 import useTranslation from '@/hooks/useTranslation';
+import './cvMain.scss';
 
 export default function CvMain() {
     const { t } = useTranslation();

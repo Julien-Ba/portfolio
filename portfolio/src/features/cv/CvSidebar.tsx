@@ -1,4 +1,4 @@
-import './cvSidebar.scss';
+import julien from '@/assets/images/julien.jpeg';
 import Bullet from '@/components/bullet/Bullet';
 import {
     JestIcon,
@@ -12,8 +12,8 @@ import {
     SassIcon,
     SwaggerIcon,
 } from '@/components/icons';
-import julien from '@/assets/images/julien.jpeg';
 import useTranslation from '@/hooks/useTranslation';
+import './cvSidebar.scss';
 
 const ICON_SIZE = 16;
 const LOGO_SIZE = 24;

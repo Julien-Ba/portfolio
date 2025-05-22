@@ -1,12 +1,13 @@
 @use '@/style/reset';
 @use '@/style/breakpoints';
 @use '@/style/colors';
+@use '@/style/components';
 @use '@/style/animations';
 
 :root {
     background-color: colors.$bg-primary;
-    font-family: Roboto, system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
-        sans-serif;
+    font-family:
+        Roboto, system-ui, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     color: colors.$text-primary;
 }
 

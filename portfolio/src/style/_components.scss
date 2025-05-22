@@ -1,0 +1,14 @@
+@use './colors';
+
+.button {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: colors.$bg-card;
+    color: colors.$text-primary;
+}
+
+.select {
+    border: none;
+    background-color: inherit;
+    color: colors.$text-primary;
+}
