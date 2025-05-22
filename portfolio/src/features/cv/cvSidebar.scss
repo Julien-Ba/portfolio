@@ -53,20 +53,20 @@
         filter: drop-shadow(0 0 5px rgba($color: #000, $alpha: 0.3))
             drop-shadow(4px 8px 5px rgba($color: #000, $alpha: 0.3));
     }
-}
 
-@media screen and (max-width: 62.5rem) {
-    .cv-sidebar {
+    @media screen and (max-width: 62.5rem) {
         margin: auto;
         grid-template-columns: 1fr 1fr;
         gap: 2rem 3rem;
         border: none;
     }
-}
 
-@media screen and (max-width: 32.5rem) {
-    .cv-sidebar {
+    @media screen and (max-width: 32.5rem) {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    @media print {
+        min-width: 14rem;
     }
 }

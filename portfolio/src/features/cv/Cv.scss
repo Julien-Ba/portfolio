@@ -14,17 +14,14 @@
     &__hero {
         grid-column: -1/1;
     }
-}
 
-@media screen and (max-width: 62.5rem) {
-    .cv {
+    @media screen and (max-width: 62.5rem) {
         grid-template-columns: 1fr;
     }
-}
 
-@media print {
-    .cv {
+    @media print {
         height: 100vh;
         border-radius: 0;
+        column-gap: 3rem;
     }
 }

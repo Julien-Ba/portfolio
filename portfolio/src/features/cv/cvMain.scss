@@ -46,7 +46,7 @@
     }
 
     &__subitem {
-        max-width: 66ch;
+        max-width: 65ch;
         font-size: clamp(0.75rem, 0.6071rem + 0.2976vw, 0.875rem);
     }
 
@@ -70,6 +70,10 @@
             margin-block-end: 1.5rem;
             justify-self: center;
             font-size: clamp(1.3125rem, 0.9554rem + 0.744vw, 1.625rem);
+        }
+
+        &__text {
+            max-width: 65ch;
         }
     }
 }
